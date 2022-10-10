@@ -1,0 +1,57 @@
+﻿<Window x:Class="Tema3_Formulario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3_Formulario"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="850" MinHeight="550" MinWidth="850">
+    <DockPanel LastChildFill="True">
+        <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold">Formulario</TextBlock>
+        <DockPanel DockPanel.Dock="Bottom" LastChildFill="False">
+            <TextBlock DockPanel.Dock="Left">Ian Tauzy</TextBlock>
+            <WrapPanel DockPanel.Dock="Right">
+                <Button>Aceptar</Button>
+                <Button>Cancelar</Button>
+            </WrapPanel>
+        </DockPanel>
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" Margin="10">
+                <WrapPanel Background="#FFDCF9F7" VerticalAlignment="Center" >
+                    <StackPanel Margin="10">
+                        <TextBlock>Nombre: </TextBlock>
+                        <TextBlock>Edad: </TextBlock>
+                        <TextBlock>Direccion : </TextBlock>
+                    </StackPanel>
+                    <StackPanel Width="400" Margin="10">
+                        <TextBox></TextBox>
+                        <TextBox></TextBox>
+                        <TextBox></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="5">
+                        <Image Source="./Recursos/info.png" Width="30" Height="20"></Image>
+                        <Image Source="./Recursos/info.png" Width="30" Height="20"></Image>
+                        <Image Source="./Recursos/info.png" Width="30" Height="20"></Image>
+                    </StackPanel>
+                </WrapPanel>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" Height="150">
+                <StackPanel Background="Red">
+                    
+                </StackPanel>
+            </Border>
+            
+            <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Source="./Recursos/foto.jpg"></Image>
+        </Grid>
+    </DockPanel>
+</Window>
