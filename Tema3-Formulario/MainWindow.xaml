@@ -31,20 +31,20 @@
                     <DropShadowEffect Direction="300"/>
                 </Border.Effect>
                 <StackPanel Orientation="Vertical">
-                        <DockPanel>
-                        <Label Margin="5" DockPanel.Dock="Left" Width="60">Nombre </Label>
-                            <Image Source="./Recursos/info.png" Width="30" Height="20" Margin="5" DockPanel.Dock="Right"></Image>
-                            <TextBox Margin="5" Height="20"></TextBox>
+                        <DockPanel Margin="5,5,5,0">
+                            <Label  DockPanel.Dock="Left" Width="60">Nombre </Label>
+                            <Image Source="./Recursos/info.png" Width="30" Height="20"  DockPanel.Dock="Right" ToolTip="Maximo 100 caracteres"></Image>
+                            <TextBox  Height="20"></TextBox>
                         </DockPanel>
-                        <DockPanel>
-                            <Label Margin="5" DockPanel.Dock="Left" Width="60">Edad</Label>
-                            <Image Source="./Recursos/info.png" Width="30" Height="20" Margin="5" DockPanel.Dock="Right"></Image>
-                            <TextBox Margin="5" Height="20"></TextBox>
+                    <DockPanel Margin="5,0">
+                            <Label  DockPanel.Dock="Left" Width="60">Edad</Label>
+                            <Image Source="./Recursos/info.png" Width="30" Height="20" DockPanel.Dock="Right" ToolTip="Numero entero entre 0 y 100"></Image>
+                            <TextBox  Height="20"></TextBox>
                         </DockPanel>
-                        <DockPanel>
-                            <Label Margin="5" DockPanel.Dock="Left" Width="60">Direccion</Label>
-                            <Image Source="./Recursos/info.png" Width="30" Height="20" Margin="5" DockPanel.Dock="Right"></Image>
-                            <TextBox Margin="5" Height="20"></TextBox>
+                    <DockPanel Margin="5,0,5,5">
+                            <Label  DockPanel.Dock="Left" Width="60">Direccion</Label>
+                            <Image Source="./Recursos/info.png" Width="30" Height="20" DockPanel.Dock="Right" ToolTip="Incluir el codigo postal"></Image>
+                            <TextBox  Height="20"></TextBox>
                     </DockPanel>
                 </StackPanel>
             </Border>
