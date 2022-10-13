@@ -15,7 +15,7 @@
                 <Button Margin="5" Width="100" Height="25">Cancelar</Button>
             </WrapPanel>
         </DockPanel>
-        <Grid ShowGridLines="True">
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
@@ -52,7 +52,7 @@
                 <Border.Effect>
                     <DropShadowEffect Direction="300"/>
                 </Border.Effect>
-                <WrapPanel>
+                <StackPanel Orientation="Horizontal">
                     <GroupBox Header="Aficiones" Margin="15" Width="200">
                         <StackPanel Margin="10">
                             <CheckBox>Hacer deporte</CheckBox>
@@ -63,13 +63,13 @@
                     </GroupBox>
                     <GroupBox Header="Estado Civil" Margin="15" Width="200">
                         <StackPanel Margin="10">
-                            <RadioButton GroupName="Estado Civil">Soltero</RadioButton>
+                            <RadioButton GroupName="Estado Civil" IsChecked="True">Soltero</RadioButton>
                             <RadioButton GroupName="Estado Civil">Casado</RadioButton>
                             <RadioButton GroupName="Estado Civil">Divorciado</RadioButton>
                             <RadioButton GroupName="Estado Civil">Viudo</RadioButton>
                         </StackPanel>
                     </GroupBox>
-                </WrapPanel>
+                </StackPanel>
             </Border>
             <Image Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Source="./Recursos/foto.jpg" Stretch="Fill"></Image>
         </Grid>
