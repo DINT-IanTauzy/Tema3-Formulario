@@ -6,6 +6,18 @@
         xmlns:local="clr-namespace:Tema3_Formulario"
         mc:Ignorable="d"
         Title="Formulario" Height="550" Width="850" MinHeight="550" MinWidth="850" Icon="./Recursos/32.ico">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Image}" x:Key="Info">
+            <Setter Property="Source" Value="./Recursos/info.png"></Setter>
+            <Setter Property="Width" Value="30"></Setter>
+            <Setter Property="Height" Value="20"></Setter>
+        </Style>
+        <!--<Style TargetType="{x:Type}">
+            
+        </Style>-->
+    </Window.Resources>
+    
     <DockPanel LastChildFill="True">
         <TextBlock DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="40" FontWeight="Bold" Margin="5">Formulario</TextBlock>
         <DockPanel DockPanel.Dock="Bottom" LastChildFill="False" Margin="5">
@@ -32,18 +44,18 @@
                 </Border.Effect>
                 <StackPanel Orientation="Vertical">
                         <DockPanel Margin="5,5,5,0">
-                            <Label  DockPanel.Dock="Left" Width="60">Nombre </Label>
-                            <Image Source="./Recursos/info.png" Width="30" Height="20"  DockPanel.Dock="Right" ToolTip="Maximo 100 caracteres"></Image>
+                            <Label DockPanel.Dock="Left" Width="60">Nombre </Label>
+                            <Image DockPanel.Dock="Right" ToolTip="Maximo 100 caracteres"  Style="{StaticResource Info}"></Image>
                             <TextBox  Height="20"></TextBox>
                         </DockPanel>
                     <DockPanel Margin="5,0">
-                            <Label  DockPanel.Dock="Left" Width="60">Edad</Label>
-                            <Image Source="./Recursos/info.png" Width="30" Height="20" DockPanel.Dock="Right" ToolTip="Numero entero entre 0 y 100"></Image>
+                            <Label DockPanel.Dock="Left" Width="60">Edad</Label>
+                            <Image DockPanel.Dock="Right" ToolTip="Numero entero entre 0 y 100"  Style="{StaticResource Info}"></Image>
                             <TextBox  Height="20"></TextBox>
                         </DockPanel>
                     <DockPanel Margin="5,0,5,5">
                             <Label  DockPanel.Dock="Left" Width="60">Direccion</Label>
-                            <Image Source="./Recursos/info.png" Width="30" Height="20" DockPanel.Dock="Right" ToolTip="Incluir el codigo postal"></Image>
+                            <Image DockPanel.Dock="Right" ToolTip="Incluir el codigo postal" Style="{StaticResource Info}"></Image>
                             <TextBox  Height="20"></TextBox>
                     </DockPanel>
                 </StackPanel>
