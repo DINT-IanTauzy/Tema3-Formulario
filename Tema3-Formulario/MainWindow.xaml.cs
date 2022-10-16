@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace Tema3_Formulario
 {
-    /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
-    /// </summary>
+    
     public partial class MainWindow : Window
     {
         public MainWindow()
